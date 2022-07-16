@@ -569,10 +569,8 @@ body .modal-backdrop {
     width: 15%;
 }
 .bithu_menu_list{
-    margin-left: 65px;
-    margin-right: 96px;
-    max-width: 514px;
-    min-width: 409px;
+    margin: -7%;
+    margin-left: 8%;
     width: 100%;
 }
 .bithu_menu_list ul{
@@ -586,6 +584,35 @@ body .modal-backdrop {
     cursor: pointer;
 }
 
+.bithu_menu_list ul li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .bithu_menu_list ul li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #00FFA3;
+    height: 1.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .bithu_menu_list ul li:hover:before, .bithu_menu_list:focus:before, .bithu_menu_list :active:before {
+    left: 0;
+    right: 0;
+  }
 
 .bithu_menu_list ul li.submenu .sub-menu-sect{
     background: transparent;
@@ -654,7 +681,7 @@ body .modal-backdrop {
 .bithu_menu_list ul li ol li a {
     font-family: 'Bakbak One';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 16px;
     line-height: 40px;
     color: rgba(255, 255, 255, 0.8);
@@ -669,9 +696,9 @@ body .modal-backdrop {
 .bithu_menu_list ul li a {
     font-family: 'Bakbak One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -689,6 +716,7 @@ body .modal-backdrop {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 11%;
     min-width: 284px;
 }
 .bithu_menu_right_sect button.join_btn {
@@ -909,7 +937,7 @@ body .modal-backdrop {
 04. Banner Section CSS
 -------------------------------------------*/
 .bithu_v1_baner_sect{
-    background: url(../images/bg/h1_banner_bg.png);
+    background: url(../images/bg/v5-baner5.jpg);
     min-height: 950px;
     width: 100%;
     background-size: cover;
@@ -2018,7 +2046,7 @@ body .modal-backdrop {
 }
 .v2_roadmap_sect{
     padding-top: 132px;
-    padding-bottom: 146px;
+    padding-bottom: 186px;
     position: relative;
     z-index: 1;
 }
@@ -2160,7 +2188,7 @@ body .modal-backdrop {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: #00FFA3;
 }
 .team_social_icon{
     width: 100%;
