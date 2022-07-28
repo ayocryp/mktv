@@ -943,12 +943,13 @@ body .modal-backdrop {
 -------------------------------------------*/
 .bithu_v1_baner_sect{
     background: rgba(230, 230, 230, 0.939);
-    min-height: 950px;
+    /* min-height: 950px; */
     width: 100%;
+    margin-bottom: 10%;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 192px;
+    padding-top: 132px;
 }
 .bithu_v2_baner_sect{
     background: url(../images/nft/v2_banner_bG.png);
@@ -4066,7 +4067,7 @@ div.latest-item .hover-shape-bg{
 16. Preloader CSS
 ---------------------------------------*/
 section.loader_first {
-    background: #1C2023;
+    background: #121415;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -4083,8 +4084,8 @@ section.loader_first {
 .loader_first .circular-spinner {
     width: 60px;
     height: 60px;
-    border: 10px solid rgba(255, 255, 255, 0.1);
-    border-top: 10px solid #00FFA3;
+    border: 10px solid #182145;
+    border-top: 10px solid #ebebeb;
     border-radius: 50%;
     animation: pre_rotate 1.5s linear infinite;
     position: absolute;
